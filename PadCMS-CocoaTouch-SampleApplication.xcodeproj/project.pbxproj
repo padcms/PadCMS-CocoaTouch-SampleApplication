@@ -15,7 +15,25 @@
 		607F3DEE1588BD470097D960 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 607F3DED1588BD470097D960 /* AppDelegate.m */; };
 		607F3DFD1588BDDF0097D960 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 607F3DFB1588BDDF0097D960 /* MainViewController.m */; };
 		607F3DFE1588BDDF0097D960 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607F3DFC1588BDDF0097D960 /* MainViewController.xib */; };
+		607F3E0F1588C1490097D960 /* libPadCMS-CocoaTouch-Core.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 607F3E0B1588C1140097D960 /* libPadCMS-CocoaTouch-Core.a */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		607F3E0A1588C1140097D960 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 607F3E031588C1140097D960 /* PadCMS-CocoaTouch-Core.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 60891D941587971300894531;
+			remoteInfo = "PadCMS-CocoaTouch-Core";
+		};
+		607F3E0D1588C1330097D960 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 607F3E031588C1140097D960 /* PadCMS-CocoaTouch-Core.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 60891D931587971300894531;
+			remoteInfo = "PadCMS-CocoaTouch-Core";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		607F3DD91588BD460097D960 /* PadCMS-CocoaTouch-SampleApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PadCMS-CocoaTouch-SampleApplication.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -31,6 +49,7 @@
 		607F3DFA1588BDDF0097D960 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		607F3DFB1588BDDF0097D960 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		607F3DFC1588BDDF0097D960 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		607F3E031588C1140097D960 /* PadCMS-CocoaTouch-Core.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "PadCMS-CocoaTouch-Core.xcodeproj"; path = "PadCMS-CocoaTouch-Core/PadCMS-CocoaTouch-Core.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				607F3E0F1588C1490097D960 /* libPadCMS-CocoaTouch-Core.a in Frameworks */,
 				607F3DDE1588BD470097D960 /* UIKit.framework in Frameworks */,
 				607F3DE01588BD470097D960 /* Foundation.framework in Frameworks */,
 				607F3DE21588BD470097D960 /* CoreGraphics.framework in Frameworks */,
@@ -50,6 +70,7 @@
 		607F3DCE1588BD460097D960 = {
 			isa = PBXGroup;
 			children = (
+				607F3E031588C1140097D960 /* PadCMS-CocoaTouch-Core.xcodeproj */,
 				607F3DE31588BD470097D960 /* PadCMS-CocoaTouch-SampleApplication */,
 				607F3DDC1588BD460097D960 /* Frameworks */,
 				607F3DDA1588BD460097D960 /* Products */,
@@ -98,6 +119,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		607F3E041588C1140097D960 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				607F3E0B1588C1140097D960 /* libPadCMS-CocoaTouch-Core.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -112,6 +141,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				607F3E0E1588C1330097D960 /* PBXTargetDependency */,
 			);
 			name = "PadCMS-CocoaTouch-SampleApplication";
 			productName = "PadCMS-CocoaTouch-SampleApplication";
@@ -136,12 +166,28 @@
 			mainGroup = 607F3DCE1588BD460097D960;
 			productRefGroup = 607F3DDA1588BD460097D960 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 607F3E041588C1140097D960 /* Products */;
+					ProjectRef = 607F3E031588C1140097D960 /* PadCMS-CocoaTouch-Core.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				607F3DD81588BD460097D960 /* PadCMS-CocoaTouch-SampleApplication */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		607F3E0B1588C1140097D960 /* libPadCMS-CocoaTouch-Core.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libPadCMS-CocoaTouch-Core.a";
+			remoteRef = 607F3E0A1588C1140097D960 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		607F3DD71588BD460097D960 /* Resources */ = {
@@ -167,6 +213,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		607F3E0E1588C1330097D960 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "PadCMS-CocoaTouch-Core";
+			targetProxy = 607F3E0D1588C1330097D960 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		607F3DE61588BD470097D960 /* InfoPlist.strings */ = {
@@ -266,6 +320,7 @@
 				607F3DF91588BD470097D960 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
