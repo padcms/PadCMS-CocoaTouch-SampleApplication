@@ -1,0 +1,3 @@
+[submodule "PadCMS-CocoaTouch-Core"]
+	path = PadCMS-CocoaTouch-Core
+	url = git@github.com:padcms/PadCMS-CocoaTouch-Core.git
