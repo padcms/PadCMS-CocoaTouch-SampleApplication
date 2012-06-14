@@ -7,7 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PCKioskDataSourceProtocol.h"
+#import "PCKioskViewControllerDelegateProtocol.h"
+#import "PCApplication.h"
 
-@interface MainViewController : UIViewController
+@interface MainViewController : UIViewController <PCKioskDataSourceProtocol,
+PCKioskViewControllerDelegateProtocol>
+
+/**
+ @brief application with revisions to be shown
+ */
+@property (retain, nonatomic) PCApplication *application;
 
 @end
