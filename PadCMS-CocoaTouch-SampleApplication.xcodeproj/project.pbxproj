@@ -37,6 +37,11 @@
 		607F46C2158A1C740097D960 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 607F46C1158A1C740097D960 /* OpenAL.framework */; };
 		607F46C4158A3CD60097D960 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 607F46C3158A3CD60097D960 /* MessageUI.framework */; };
 		607F46C6158A3D2B0097D960 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 607F46C5158A3D2B0097D960 /* Twitter.framework */; };
+		60A5DCB0158B3C5F00E3E98A /* kiosk_button_cancel.png in Resources */ = {isa = PBXBuildFile; fileRef = 60A5DCAC158B3C5F00E3E98A /* kiosk_button_cancel.png */; };
+		60A5DCB1158B3C5F00E3E98A /* kiosk_button_delete.png in Resources */ = {isa = PBXBuildFile; fileRef = 60A5DCAD158B3C5F00E3E98A /* kiosk_button_delete.png */; };
+		60A5DCB2158B3C5F00E3E98A /* kiosk_button_download.png in Resources */ = {isa = PBXBuildFile; fileRef = 60A5DCAE158B3C5F00E3E98A /* kiosk_button_download.png */; };
+		60A5DCB3158B3C5F00E3E98A /* kiosk_button_read.png in Resources */ = {isa = PBXBuildFile; fileRef = 60A5DCAF158B3C5F00E3E98A /* kiosk_button_read.png */; };
+		60A5DCE4158B7C4E00E3E98A /* PadCMS-CocoaTouch-Core-Resources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 60A5DCE3158B79FD00E3E98A /* PadCMS-CocoaTouch-Core-Resources.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = 60891D931587971300894531;
 			remoteInfo = "PadCMS-CocoaTouch-Core";
+		};
+		60A5DCDF158B79FC00E3E98A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 607F3E031588C1140097D960 /* PadCMS-CocoaTouch-Core.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 60A5DCC7158B793F00E3E98A;
+			remoteInfo = "PadCMS-CocoaTouch-Core-Resources";
+		};
+		60A5DCE2158B79FD00E3E98A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 607F3E031588C1140097D960 /* PadCMS-CocoaTouch-Core.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 60A5DCC8158B793F00E3E98A;
+			remoteInfo = "PadCMS-CocoaTouch-Core-Resources";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -97,6 +116,10 @@
 		607F46C1158A1C740097D960 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
 		607F46C3158A3CD60097D960 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		607F46C5158A3D2B0097D960 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
+		60A5DCAC158B3C5F00E3E98A /* kiosk_button_cancel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kiosk_button_cancel.png; sourceTree = "<group>"; };
+		60A5DCAD158B3C5F00E3E98A /* kiosk_button_delete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kiosk_button_delete.png; sourceTree = "<group>"; };
+		60A5DCAE158B3C5F00E3E98A /* kiosk_button_download.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kiosk_button_download.png; sourceTree = "<group>"; };
+		60A5DCAF158B3C5F00E3E98A /* kiosk_button_read.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kiosk_button_read.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +200,7 @@
 		607F3DE31588BD470097D960 /* PadCMS-CocoaTouch-SampleApplication */ = {
 			isa = PBXGroup;
 			children = (
+				60A5DCA9158B3C5F00E3E98A /* Resources */,
 				607F46831589FD0B0097D960 /* Kiosk */,
 				607F3DEC1588BD470097D960 /* AppDelegate.h */,
 				607F3DED1588BD470097D960 /* AppDelegate.m */,
@@ -203,6 +227,7 @@
 			isa = PBXGroup;
 			children = (
 				607F3E0B1588C1140097D960 /* libPadCMS-CocoaTouch-Core.a */,
+				60A5DCE3158B79FD00E3E98A /* PadCMS-CocoaTouch-Core-Resources.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -224,6 +249,33 @@
 			name = Kiosk;
 			sourceTree = "<group>";
 		};
+		60A5DCA9158B3C5F00E3E98A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				60A5DCAA158B3C5F00E3E98A /* Images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		60A5DCAA158B3C5F00E3E98A /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				60A5DCAB158B3C5F00E3E98A /* Kiosk */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		60A5DCAB158B3C5F00E3E98A /* Kiosk */ = {
+			isa = PBXGroup;
+			children = (
+				60A5DCAC158B3C5F00E3E98A /* kiosk_button_cancel.png */,
+				60A5DCAD158B3C5F00E3E98A /* kiosk_button_delete.png */,
+				60A5DCAE158B3C5F00E3E98A /* kiosk_button_download.png */,
+				60A5DCAF158B3C5F00E3E98A /* kiosk_button_read.png */,
+			);
+			path = Kiosk;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -238,6 +290,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				60A5DCE0158B79FC00E3E98A /* PBXTargetDependency */,
 				607F3E0E1588C1330097D960 /* PBXTargetDependency */,
 			);
 			name = "PadCMS-CocoaTouch-SampleApplication";
@@ -285,6 +338,13 @@
 			remoteRef = 607F3E0A1588C1140097D960 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		60A5DCE3158B79FD00E3E98A /* PadCMS-CocoaTouch-Core-Resources.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "PadCMS-CocoaTouch-Core-Resources.bundle";
+			remoteRef = 60A5DCE2158B79FD00E3E98A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -294,6 +354,11 @@
 			files = (
 				607F3DE81588BD470097D960 /* InfoPlist.strings in Resources */,
 				607F3DFE1588BDDF0097D960 /* MainViewController.xib in Resources */,
+				60A5DCB0158B3C5F00E3E98A /* kiosk_button_cancel.png in Resources */,
+				60A5DCB1158B3C5F00E3E98A /* kiosk_button_delete.png in Resources */,
+				60A5DCB2158B3C5F00E3E98A /* kiosk_button_download.png in Resources */,
+				60A5DCB3158B3C5F00E3E98A /* kiosk_button_read.png in Resources */,
+				60A5DCE4158B7C4E00E3E98A /* PadCMS-CocoaTouch-Core-Resources.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +387,11 @@
 			isa = PBXTargetDependency;
 			name = "PadCMS-CocoaTouch-Core";
 			targetProxy = 607F3E0D1588C1330097D960 /* PBXContainerItemProxy */;
+		};
+		60A5DCE0158B79FC00E3E98A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "PadCMS-CocoaTouch-Core-Resources";
+			targetProxy = 60A5DCDF158B79FC00E3E98A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

@@ -10,4 +10,15 @@
 
 @implementation KioskGalleryControlElement
 
+- (void) initCover
+{
+    // no cover
+}
+
+-(void)initLabels
+{
+    [super initLabels];
+    [revisionTitleLabel removeFromSuperview];
+}
+
 @end

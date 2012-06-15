@@ -16,9 +16,9 @@
 PadCMSCodeDelegate,
 PCKioskViewControllerDelegateProtocol>
 
-/**
- @brief application with revisions to be shown
- */
 @property (retain, nonatomic) PCApplication *application;
+
+@property (retain, nonatomic) IBOutlet UIView *kioskView;
+- (IBAction)kioskChangeModeTapped:(id)sender;
 
 @end
