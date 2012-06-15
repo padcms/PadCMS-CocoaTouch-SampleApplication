@@ -35,5 +35,24 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+        <key>PADCMSConfig</key>
+        <dict>
+                <key>PCScrollViewScrollButtonsDisabled</key>
+                <true/>
+                <key>PCConfigApplicationIdentifier</key>
+                <integer>12</integer>
+                <key>PCConfigClientIdentifier</key>
+                <integer>11</integer>
+                <key>PCConfigGANAccountId</key>
+                <string>UA-1535257-15</string>
+                <key>PCConfigFacebookId</key>
+                <string>239520262820529</string>
+                <key>PCConfigServerURL</key>
+                <string>http://new.padcms.adyax.com</string>
+                <key>PCConfigUseSandBox</key>
+                <false/>
+                <key>PCDisableSearching</key>
+                <true/>
+	</dict>
 </dict>
 </plist>

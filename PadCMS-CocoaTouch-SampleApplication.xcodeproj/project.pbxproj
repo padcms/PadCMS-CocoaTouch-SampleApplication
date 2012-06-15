@@ -16,6 +16,27 @@
 		607F3DFD1588BDDF0097D960 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 607F3DFB1588BDDF0097D960 /* MainViewController.m */; };
 		607F3DFE1588BDDF0097D960 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607F3DFC1588BDDF0097D960 /* MainViewController.xib */; };
 		607F3E0F1588C1490097D960 /* libPadCMS-CocoaTouch-Core.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 607F3E0B1588C1140097D960 /* libPadCMS-CocoaTouch-Core.a */; };
+		607F46861589FD620097D960 /* KioskSubviewsFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 607F46851589FD620097D960 /* KioskSubviewsFactory.m */; };
+		607F46891589FD9D0097D960 /* KioskShelfView.m in Sources */ = {isa = PBXBuildFile; fileRef = 607F46881589FD9D0097D960 /* KioskShelfView.m */; };
+		607F468C1589FDC40097D960 /* KioskGalleryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 607F468B1589FDC40097D960 /* KioskGalleryView.m */; };
+		607F46A01589FF250097D960 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 607F469F1589FF250097D960 /* QuartzCore.framework */; };
+		607F46A3158A00840097D960 /* KioskControlElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 607F46A2158A00840097D960 /* KioskControlElement.m */; };
+		607F46A6158A00C30097D960 /* KioskGalleryControlElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 607F46A5158A00C30097D960 /* KioskGalleryControlElement.m */; };
+		607F46A8158A05330097D960 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 607F46A7158A05320097D960 /* SystemConfiguration.framework */; };
+		607F46AC158A0ECD0097D960 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 607F46AB158A0ECD0097D960 /* libsqlite3.dylib */; };
+		607F46AE158A0FA90097D960 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 607F46AD158A0FA90097D960 /* ImageIO.framework */; };
+		607F46B0158A10010097D960 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 607F46AF158A10010097D960 /* StoreKit.framework */; };
+		607F46B2158A101C0097D960 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 607F46B1158A101C0097D960 /* libz.dylib */; };
+		607F46B4158A10420097D960 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 607F46B3158A10420097D960 /* CFNetwork.framework */; };
+		607F46B6158A10680097D960 /* NewsstandKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 607F46B5158A10680097D960 /* NewsstandKit.framework */; };
+		607F46B8158A1BF50097D960 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 607F46B7158A1BF50097D960 /* OpenGLES.framework */; };
+		607F46BA158A1C0E0097D960 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 607F46B9158A1C0E0097D960 /* MediaPlayer.framework */; };
+		607F46BC158A1C270097D960 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 607F46BB158A1C270097D960 /* AVFoundation.framework */; };
+		607F46BE158A1C3E0097D960 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 607F46BD158A1C3E0097D960 /* AudioToolbox.framework */; };
+		607F46C0158A1C5B0097D960 /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 607F46BF158A1C5B0097D960 /* libxml2.2.dylib */; };
+		607F46C2158A1C740097D960 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 607F46C1158A1C740097D960 /* OpenAL.framework */; };
+		607F46C4158A3CD60097D960 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 607F46C3158A3CD60097D960 /* MessageUI.framework */; };
+		607F46C6158A3D2B0097D960 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 607F46C5158A3D2B0097D960 /* Twitter.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +71,32 @@
 		607F3DFB1588BDDF0097D960 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		607F3DFC1588BDDF0097D960 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		607F3E031588C1140097D960 /* PadCMS-CocoaTouch-Core.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "PadCMS-CocoaTouch-Core.xcodeproj"; path = "PadCMS-CocoaTouch-Core/PadCMS-CocoaTouch-Core.xcodeproj"; sourceTree = "<group>"; };
+		607F46841589FD620097D960 /* KioskSubviewsFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KioskSubviewsFactory.h; path = Kiosk/KioskSubviewsFactory.h; sourceTree = "<group>"; };
+		607F46851589FD620097D960 /* KioskSubviewsFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KioskSubviewsFactory.m; path = Kiosk/KioskSubviewsFactory.m; sourceTree = "<group>"; };
+		607F46871589FD9D0097D960 /* KioskShelfView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KioskShelfView.h; path = Kiosk/KioskShelfView.h; sourceTree = "<group>"; };
+		607F46881589FD9D0097D960 /* KioskShelfView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KioskShelfView.m; path = Kiosk/KioskShelfView.m; sourceTree = "<group>"; };
+		607F468A1589FDC40097D960 /* KioskGalleryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KioskGalleryView.h; path = Kiosk/KioskGalleryView.h; sourceTree = "<group>"; };
+		607F468B1589FDC40097D960 /* KioskGalleryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KioskGalleryView.m; path = Kiosk/KioskGalleryView.m; sourceTree = "<group>"; };
+		607F469F1589FF250097D960 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		607F46A1158A00840097D960 /* KioskControlElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KioskControlElement.h; path = Kiosk/KioskControlElement.h; sourceTree = "<group>"; };
+		607F46A2158A00840097D960 /* KioskControlElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KioskControlElement.m; path = Kiosk/KioskControlElement.m; sourceTree = "<group>"; };
+		607F46A4158A00C30097D960 /* KioskGalleryControlElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KioskGalleryControlElement.h; path = Kiosk/KioskGalleryControlElement.h; sourceTree = "<group>"; };
+		607F46A5158A00C30097D960 /* KioskGalleryControlElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KioskGalleryControlElement.m; path = Kiosk/KioskGalleryControlElement.m; sourceTree = "<group>"; };
+		607F46A7158A05320097D960 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		607F46AB158A0ECD0097D960 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		607F46AD158A0FA90097D960 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		607F46AF158A10010097D960 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		607F46B1158A101C0097D960 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		607F46B3158A10420097D960 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		607F46B5158A10680097D960 /* NewsstandKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NewsstandKit.framework; path = System/Library/Frameworks/NewsstandKit.framework; sourceTree = SDKROOT; };
+		607F46B7158A1BF50097D960 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		607F46B9158A1C0E0097D960 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		607F46BB158A1C270097D960 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		607F46BD158A1C3E0097D960 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		607F46BF158A1C5B0097D960 /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = usr/lib/libxml2.2.dylib; sourceTree = SDKROOT; };
+		607F46C1158A1C740097D960 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
+		607F46C3158A3CD60097D960 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		607F46C5158A3D2B0097D960 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +104,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				607F46C6158A3D2B0097D960 /* Twitter.framework in Frameworks */,
+				607F46C4158A3CD60097D960 /* MessageUI.framework in Frameworks */,
+				607F46C2158A1C740097D960 /* OpenAL.framework in Frameworks */,
+				607F46C0158A1C5B0097D960 /* libxml2.2.dylib in Frameworks */,
+				607F46BE158A1C3E0097D960 /* AudioToolbox.framework in Frameworks */,
+				607F46BC158A1C270097D960 /* AVFoundation.framework in Frameworks */,
+				607F46BA158A1C0E0097D960 /* MediaPlayer.framework in Frameworks */,
+				607F46B8158A1BF50097D960 /* OpenGLES.framework in Frameworks */,
+				607F46B6158A10680097D960 /* NewsstandKit.framework in Frameworks */,
+				607F46B4158A10420097D960 /* CFNetwork.framework in Frameworks */,
+				607F46B2158A101C0097D960 /* libz.dylib in Frameworks */,
+				607F46B0158A10010097D960 /* StoreKit.framework in Frameworks */,
+				607F46AE158A0FA90097D960 /* ImageIO.framework in Frameworks */,
+				607F46AC158A0ECD0097D960 /* libsqlite3.dylib in Frameworks */,
+				607F46A8158A05330097D960 /* SystemConfiguration.framework in Frameworks */,
+				607F46A01589FF250097D960 /* QuartzCore.framework in Frameworks */,
 				607F3E0F1588C1490097D960 /* libPadCMS-CocoaTouch-Core.a in Frameworks */,
 				607F3DDE1588BD470097D960 /* UIKit.framework in Frameworks */,
 				607F3DE01588BD470097D960 /* Foundation.framework in Frameworks */,
@@ -88,6 +151,22 @@
 		607F3DDC1588BD460097D960 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				607F46C5158A3D2B0097D960 /* Twitter.framework */,
+				607F46C3158A3CD60097D960 /* MessageUI.framework */,
+				607F46C1158A1C740097D960 /* OpenAL.framework */,
+				607F46BF158A1C5B0097D960 /* libxml2.2.dylib */,
+				607F46BD158A1C3E0097D960 /* AudioToolbox.framework */,
+				607F46BB158A1C270097D960 /* AVFoundation.framework */,
+				607F46B9158A1C0E0097D960 /* MediaPlayer.framework */,
+				607F46B7158A1BF50097D960 /* OpenGLES.framework */,
+				607F46B5158A10680097D960 /* NewsstandKit.framework */,
+				607F46B3158A10420097D960 /* CFNetwork.framework */,
+				607F46B1158A101C0097D960 /* libz.dylib */,
+				607F46AF158A10010097D960 /* StoreKit.framework */,
+				607F46AD158A0FA90097D960 /* ImageIO.framework */,
+				607F46AB158A0ECD0097D960 /* libsqlite3.dylib */,
+				607F46A7158A05320097D960 /* SystemConfiguration.framework */,
+				607F469F1589FF250097D960 /* QuartzCore.framework */,
 				607F3DDD1588BD470097D960 /* UIKit.framework */,
 				607F3DDF1588BD470097D960 /* Foundation.framework */,
 				607F3DE11588BD470097D960 /* CoreGraphics.framework */,
@@ -98,6 +177,7 @@
 		607F3DE31588BD470097D960 /* PadCMS-CocoaTouch-SampleApplication */ = {
 			isa = PBXGroup;
 			children = (
+				607F46831589FD0B0097D960 /* Kiosk */,
 				607F3DEC1588BD470097D960 /* AppDelegate.h */,
 				607F3DED1588BD470097D960 /* AppDelegate.m */,
 				607F3DFA1588BDDF0097D960 /* MainViewController.h */,
@@ -125,6 +205,23 @@
 				607F3E0B1588C1140097D960 /* libPadCMS-CocoaTouch-Core.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		607F46831589FD0B0097D960 /* Kiosk */ = {
+			isa = PBXGroup;
+			children = (
+				607F46841589FD620097D960 /* KioskSubviewsFactory.h */,
+				607F46851589FD620097D960 /* KioskSubviewsFactory.m */,
+				607F46871589FD9D0097D960 /* KioskShelfView.h */,
+				607F46881589FD9D0097D960 /* KioskShelfView.m */,
+				607F468A1589FDC40097D960 /* KioskGalleryView.h */,
+				607F468B1589FDC40097D960 /* KioskGalleryView.m */,
+				607F46A1158A00840097D960 /* KioskControlElement.h */,
+				607F46A2158A00840097D960 /* KioskControlElement.m */,
+				607F46A4158A00C30097D960 /* KioskGalleryControlElement.h */,
+				607F46A5158A00C30097D960 /* KioskGalleryControlElement.m */,
+			);
+			name = Kiosk;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,6 +307,11 @@
 				607F3DEA1588BD470097D960 /* main.m in Sources */,
 				607F3DEE1588BD470097D960 /* AppDelegate.m in Sources */,
 				607F3DFD1588BDDF0097D960 /* MainViewController.m in Sources */,
+				607F46861589FD620097D960 /* KioskSubviewsFactory.m in Sources */,
+				607F46891589FD9D0097D960 /* KioskShelfView.m in Sources */,
+				607F468C1589FDC40097D960 /* KioskGalleryView.m in Sources */,
+				607F46A3158A00840097D960 /* KioskControlElement.m in Sources */,
+				607F46A6158A00C30097D960 /* KioskGalleryControlElement.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +388,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PadCMS-CocoaTouch-SampleApplication/PadCMS-CocoaTouch-SampleApplication-Prefix.pch";
 				INFOPLIST_FILE = "PadCMS-CocoaTouch-SampleApplication/PadCMS-CocoaTouch-SampleApplication-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lstdc++",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -297,6 +403,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PadCMS-CocoaTouch-SampleApplication/PadCMS-CocoaTouch-SampleApplication-Prefix.pch";
 				INFOPLIST_FILE = "PadCMS-CocoaTouch-SampleApplication/PadCMS-CocoaTouch-SampleApplication-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lstdc++",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

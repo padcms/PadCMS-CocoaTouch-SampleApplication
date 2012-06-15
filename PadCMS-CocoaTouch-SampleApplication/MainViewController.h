@@ -10,8 +10,10 @@
 #import "PCKioskDataSourceProtocol.h"
 #import "PCKioskViewControllerDelegateProtocol.h"
 #import "PCApplication.h"
+#import "PadCMSCoder.h"
 
 @interface MainViewController : UIViewController <PCKioskDataSourceProtocol,
+PadCMSCodeDelegate,
 PCKioskViewControllerDelegateProtocol>
 
 /**
