@@ -7,6 +7,7 @@
 //
 
 #import "KioskControlElement.h"
+#import "PCKioskShelfSettings.h"
 
 @implementation KioskControlElement
 
@@ -23,6 +24,20 @@
     [readButton setTitle:@"Read" forState:UIControlStateNormal];
     [cancelButton setTitle:@"Cancel" forState:UIControlStateNormal];
     [deleteButton setTitle:@"Delete" forState:UIControlStateNormal];
+    
+    CGRect      rect = readButton.frame;
+    rect.origin.y += rect.size.height + 10;
+    deleteButton.frame = rect;
+}
+
+- (void) initDownloadingProgressComponents
+{
+    [super initDownloadingProgressComponents];
+    
+    downloadingInfoLabel.frame = CGRectMake(downloadingProgressView.frame.origin.x,
+                                            downloadingProgressView.frame.origin.y + downloadingProgressView.frame.size.height + 10,
+                                            downloadingProgressView.frame.size.width,
+                                            KIOSK_SHELF_CELL_REVISION_TITLE_HEIGHT);
 }
 
 @end

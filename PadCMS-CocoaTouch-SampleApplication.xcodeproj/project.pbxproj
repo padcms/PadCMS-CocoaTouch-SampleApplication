@@ -42,6 +42,10 @@
 		60A5DCB2158B3C5F00E3E98A /* kiosk_button_download.png in Resources */ = {isa = PBXBuildFile; fileRef = 60A5DCAE158B3C5F00E3E98A /* kiosk_button_download.png */; };
 		60A5DCB3158B3C5F00E3E98A /* kiosk_button_read.png in Resources */ = {isa = PBXBuildFile; fileRef = 60A5DCAF158B3C5F00E3E98A /* kiosk_button_read.png */; };
 		60A5DCE4158B7C4E00E3E98A /* PadCMS-CocoaTouch-Core-Resources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 60A5DCE3158B79FD00E3E98A /* PadCMS-CocoaTouch-Core-Resources.bundle */; };
+		60A5DD0E158F487A00E3E98A /* btnEmail.png in Resources */ = {isa = PBXBuildFile; fileRef = 60A5DD0A158F487A00E3E98A /* btnEmail.png */; };
+		60A5DD0F158F487A00E3E98A /* btnFacebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 60A5DD0B158F487A00E3E98A /* btnFacebook.png */; };
+		60A5DD10158F487A00E3E98A /* btnTwitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 60A5DD0C158F487A00E3E98A /* btnTwitter.png */; };
+		60A5DD11158F487A00E3E98A /* sharePopup.png in Resources */ = {isa = PBXBuildFile; fileRef = 60A5DD0D158F487A00E3E98A /* sharePopup.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,6 +124,10 @@
 		60A5DCAD158B3C5F00E3E98A /* kiosk_button_delete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kiosk_button_delete.png; sourceTree = "<group>"; };
 		60A5DCAE158B3C5F00E3E98A /* kiosk_button_download.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kiosk_button_download.png; sourceTree = "<group>"; };
 		60A5DCAF158B3C5F00E3E98A /* kiosk_button_read.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kiosk_button_read.png; sourceTree = "<group>"; };
+		60A5DD0A158F487A00E3E98A /* btnEmail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btnEmail.png; sourceTree = "<group>"; };
+		60A5DD0B158F487A00E3E98A /* btnFacebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btnFacebook.png; sourceTree = "<group>"; };
+		60A5DD0C158F487A00E3E98A /* btnTwitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btnTwitter.png; sourceTree = "<group>"; };
+		60A5DD0D158F487A00E3E98A /* sharePopup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sharePopup.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -260,6 +268,7 @@
 		60A5DCAA158B3C5F00E3E98A /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				60A5DD09158F487A00E3E98A /* sharing */,
 				60A5DCAB158B3C5F00E3E98A /* Kiosk */,
 			);
 			path = Images;
@@ -274,6 +283,17 @@
 				60A5DCAF158B3C5F00E3E98A /* kiosk_button_read.png */,
 			);
 			path = Kiosk;
+			sourceTree = "<group>";
+		};
+		60A5DD09158F487A00E3E98A /* sharing */ = {
+			isa = PBXGroup;
+			children = (
+				60A5DD0A158F487A00E3E98A /* btnEmail.png */,
+				60A5DD0B158F487A00E3E98A /* btnFacebook.png */,
+				60A5DD0C158F487A00E3E98A /* btnTwitter.png */,
+				60A5DD0D158F487A00E3E98A /* sharePopup.png */,
+			);
+			path = sharing;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -359,6 +379,10 @@
 				60A5DCB2158B3C5F00E3E98A /* kiosk_button_download.png in Resources */,
 				60A5DCB3158B3C5F00E3E98A /* kiosk_button_read.png in Resources */,
 				60A5DCE4158B7C4E00E3E98A /* PadCMS-CocoaTouch-Core-Resources.bundle in Resources */,
+				60A5DD0E158F487A00E3E98A /* btnEmail.png in Resources */,
+				60A5DD0F158F487A00E3E98A /* btnFacebook.png in Resources */,
+				60A5DD10158F487A00E3E98A /* btnTwitter.png in Resources */,
+				60A5DD11158F487A00E3E98A /* sharePopup.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

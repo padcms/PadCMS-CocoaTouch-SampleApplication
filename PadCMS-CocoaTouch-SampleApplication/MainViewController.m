@@ -33,6 +33,7 @@
 
 - (void) initKiosk;
 - (void) initManager;
+- (void) switchToKiosk;
 
 - (PCRevision*) revisionWithIndex:(NSInteger)index;
 - (PCRevision*) revisionWithIdentifier:(NSInteger)identifier;
@@ -203,6 +204,20 @@
 - (PCApplication*) getApplication
 {
     return currentApplication;
+}
+
+- (void) switchToKiosk
+{
+    [[NSURLCache sharedURLCache] removeAllCachedResponses];
+    [[PCResourceCache sharedInstance] removeAllObjects];
+    [[ImageCache sharedImageCache] removeAllImages];
+    [[PCDownloadManager sharedManager] cancelAllOperations];
+    if(_revisionViewController)
+    {
+        [_revisionViewController.view removeFromSuperview];
+        [_revisionViewController release];
+        _revisionViewController = nil;
+    }
 }
 
 #pragma mark - PCKioskDataSourceProtocol
