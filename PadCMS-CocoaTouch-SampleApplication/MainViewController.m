@@ -21,6 +21,8 @@
 #import "PCDownloadManager.h"
 #import "ImageCache.h"
 #import "PCResourceCache.h"
+#import "KioskGalleryView.h"
+#import "KioskShelfView.h"
 
 @interface MainViewController ()
 {
@@ -47,6 +49,7 @@
 @end
 
 @implementation MainViewController
+@synthesize kioskChangeModeButton = _kioskChangeModeButton;
 
 @synthesize kioskViewController = _kioskViewController;
 @synthesize padcmsCoder = _padcmsCoder;
@@ -80,6 +83,7 @@
 
 - (void)viewDidUnload
 {
+    [self setKioskChangeModeButton:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -161,6 +165,13 @@
 
 - (IBAction)kioskChangeModeTapped:(id)sender
 {
+    if([self.kioskViewController currentSubviewTag]==[KioskGalleryView subviewTag])
+    {
+        [_kioskChangeModeButton setBackgroundImage:[UIImage imageNamed:@"icon_gallery.png"] forState:UIControlStateNormal];
+    } else {
+        [_kioskChangeModeButton setBackgroundImage:[UIImage imageNamed:@"icon_shelf.png"] forState:UIControlStateNormal];
+    }
+    
     [self.kioskViewController switchToNextSubview];
 }
 
@@ -523,4 +534,8 @@
     }
 }
 
+- (void)dealloc {
+    [_kioskChangeModeButton release];
+    [super dealloc];
+}
 @end

@@ -46,6 +46,8 @@
 		60A5DD0F158F487A00E3E98A /* btnFacebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 60A5DD0B158F487A00E3E98A /* btnFacebook.png */; };
 		60A5DD10158F487A00E3E98A /* btnTwitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 60A5DD0C158F487A00E3E98A /* btnTwitter.png */; };
 		60A5DD11158F487A00E3E98A /* sharePopup.png in Resources */ = {isa = PBXBuildFile; fileRef = 60A5DD0D158F487A00E3E98A /* sharePopup.png */; };
+		60A5DD2C158F4F1D00E3E98A /* icon_gallery.png in Resources */ = {isa = PBXBuildFile; fileRef = 60A5DD2A158F4F1D00E3E98A /* icon_gallery.png */; };
+		60A5DD2D158F4F1D00E3E98A /* icon_shelf.png in Resources */ = {isa = PBXBuildFile; fileRef = 60A5DD2B158F4F1D00E3E98A /* icon_shelf.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -128,6 +130,8 @@
 		60A5DD0B158F487A00E3E98A /* btnFacebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btnFacebook.png; sourceTree = "<group>"; };
 		60A5DD0C158F487A00E3E98A /* btnTwitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btnTwitter.png; sourceTree = "<group>"; };
 		60A5DD0D158F487A00E3E98A /* sharePopup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sharePopup.png; sourceTree = "<group>"; };
+		60A5DD2A158F4F1D00E3E98A /* icon_gallery.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_gallery.png; sourceTree = "<group>"; };
+		60A5DD2B158F4F1D00E3E98A /* icon_shelf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_shelf.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -277,6 +281,8 @@
 		60A5DCAB158B3C5F00E3E98A /* Kiosk */ = {
 			isa = PBXGroup;
 			children = (
+				60A5DD2A158F4F1D00E3E98A /* icon_gallery.png */,
+				60A5DD2B158F4F1D00E3E98A /* icon_shelf.png */,
 				60A5DCAC158B3C5F00E3E98A /* kiosk_button_cancel.png */,
 				60A5DCAD158B3C5F00E3E98A /* kiosk_button_delete.png */,
 				60A5DCAE158B3C5F00E3E98A /* kiosk_button_download.png */,
@@ -383,6 +389,8 @@
 				60A5DD0F158F487A00E3E98A /* btnFacebook.png in Resources */,
 				60A5DD10158F487A00E3E98A /* btnTwitter.png in Resources */,
 				60A5DD11158F487A00E3E98A /* sharePopup.png in Resources */,
+				60A5DD2C158F4F1D00E3E98A /* icon_gallery.png in Resources */,
+				60A5DD2D158F4F1D00E3E98A /* icon_shelf.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -26,8 +26,8 @@
     gallerySubview.hidden = YES;
     
     result = [NSArray arrayWithObjects:
-              shelfSubview,
               gallerySubview,
+              shelfSubview,
               nil];
     
     return result;
