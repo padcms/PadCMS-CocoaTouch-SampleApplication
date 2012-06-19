@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6033A6E21590694B00158E1C /* embeddedPhotosButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 6033A6DA1590694B00158E1C /* embeddedPhotosButton.png */; };
+		6033A6E31590694B00158E1C /* gallaryEnterButtonBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 6033A6DB1590694B00158E1C /* gallaryEnterButtonBackground.png */; };
+		6033A6E41590694B00158E1C /* gallaryPageControlItemNormal.png in Resources */ = {isa = PBXBuildFile; fileRef = 6033A6DC1590694B00158E1C /* gallaryPageControlItemNormal.png */; };
+		6033A6E51590694B00158E1C /* gallaryPageControlItemSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = 6033A6DD1590694B00158E1C /* gallaryPageControlItemSelected.png */; };
+		6033A6E61590694B00158E1C /* gallaryReturnButtonBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 6033A6DE1590694B00158E1C /* gallaryReturnButtonBackground.png */; };
+		6033A6E71590694B00158E1C /* scrollControllBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 6033A6DF1590694B00158E1C /* scrollControllBackground.png */; };
+		6033A6E81590694B00158E1C /* sliderPageControlItemNormal.png in Resources */ = {isa = PBXBuildFile; fileRef = 6033A6E01590694B00158E1C /* sliderPageControlItemNormal.png */; };
+		6033A6E91590694B00158E1C /* tocMenuButtonBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 6033A6E11590694B00158E1C /* tocMenuButtonBackground.png */; };
 		607F3DDE1588BD470097D960 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 607F3DDD1588BD470097D960 /* UIKit.framework */; };
 		607F3DE01588BD470097D960 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 607F3DDF1588BD470097D960 /* Foundation.framework */; };
 		607F3DE21588BD470097D960 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 607F3DE11588BD470097D960 /* CoreGraphics.framework */; };
@@ -82,6 +90,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6033A6DA1590694B00158E1C /* embeddedPhotosButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = embeddedPhotosButton.png; sourceTree = "<group>"; };
+		6033A6DB1590694B00158E1C /* gallaryEnterButtonBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gallaryEnterButtonBackground.png; sourceTree = "<group>"; };
+		6033A6DC1590694B00158E1C /* gallaryPageControlItemNormal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gallaryPageControlItemNormal.png; sourceTree = "<group>"; };
+		6033A6DD1590694B00158E1C /* gallaryPageControlItemSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gallaryPageControlItemSelected.png; sourceTree = "<group>"; };
+		6033A6DE1590694B00158E1C /* gallaryReturnButtonBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gallaryReturnButtonBackground.png; sourceTree = "<group>"; };
+		6033A6DF1590694B00158E1C /* scrollControllBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scrollControllBackground.png; sourceTree = "<group>"; };
+		6033A6E01590694B00158E1C /* sliderPageControlItemNormal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sliderPageControlItemNormal.png; sourceTree = "<group>"; };
+		6033A6E11590694B00158E1C /* tocMenuButtonBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tocMenuButtonBackground.png; sourceTree = "<group>"; };
 		607F3DD91588BD460097D960 /* PadCMS-CocoaTouch-SampleApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PadCMS-CocoaTouch-SampleApplication.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		607F3DDD1588BD470097D960 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		607F3DDF1588BD470097D960 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -165,6 +181,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6033A6D91590694B00158E1C /* Magazine */ = {
+			isa = PBXGroup;
+			children = (
+				6033A6DA1590694B00158E1C /* embeddedPhotosButton.png */,
+				6033A6DB1590694B00158E1C /* gallaryEnterButtonBackground.png */,
+				6033A6DC1590694B00158E1C /* gallaryPageControlItemNormal.png */,
+				6033A6DD1590694B00158E1C /* gallaryPageControlItemSelected.png */,
+				6033A6DE1590694B00158E1C /* gallaryReturnButtonBackground.png */,
+				6033A6DF1590694B00158E1C /* scrollControllBackground.png */,
+				6033A6E01590694B00158E1C /* sliderPageControlItemNormal.png */,
+				6033A6E11590694B00158E1C /* tocMenuButtonBackground.png */,
+			);
+			path = Magazine;
+			sourceTree = "<group>";
+		};
 		607F3DCE1588BD460097D960 = {
 			isa = PBXGroup;
 			children = (
@@ -272,6 +303,7 @@
 		60A5DCAA158B3C5F00E3E98A /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				6033A6D91590694B00158E1C /* Magazine */,
 				60A5DD09158F487A00E3E98A /* sharing */,
 				60A5DCAB158B3C5F00E3E98A /* Kiosk */,
 			);
@@ -391,6 +423,14 @@
 				60A5DD11158F487A00E3E98A /* sharePopup.png in Resources */,
 				60A5DD2C158F4F1D00E3E98A /* icon_gallery.png in Resources */,
 				60A5DD2D158F4F1D00E3E98A /* icon_shelf.png in Resources */,
+				6033A6E21590694B00158E1C /* embeddedPhotosButton.png in Resources */,
+				6033A6E31590694B00158E1C /* gallaryEnterButtonBackground.png in Resources */,
+				6033A6E41590694B00158E1C /* gallaryPageControlItemNormal.png in Resources */,
+				6033A6E51590694B00158E1C /* gallaryPageControlItemSelected.png in Resources */,
+				6033A6E61590694B00158E1C /* gallaryReturnButtonBackground.png in Resources */,
+				6033A6E71590694B00158E1C /* scrollControllBackground.png in Resources */,
+				6033A6E81590694B00158E1C /* sliderPageControlItemNormal.png in Resources */,
+				6033A6E91590694B00158E1C /* tocMenuButtonBackground.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
