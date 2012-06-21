@@ -34,19 +34,15 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "PCKioskDataSourceProtocol.h"
-#import "PCKioskViewControllerDelegateProtocol.h"
-#import "PCApplication.h"
-#import "PadCMSCoder.h"
+#import "PCStoreControllerDelegate.h"
 
-@interface MainViewController : UIViewController <PCKioskDataSourceProtocol,
-PadCMSCodeDelegate,
-PCKioskViewControllerDelegateProtocol>
-
-@property (retain, nonatomic) PCApplication *application;
+@class PCStoreController;
+@interface MainViewController : UIViewController <PCStoreControllerDelegate>
 
 @property (retain, nonatomic) IBOutlet UIView *kioskView;
-- (IBAction)kioskChangeModeTapped:(id)sender;
+@property (assign, nonatomic) PCStoreController* storeController;
 @property (retain, nonatomic) IBOutlet UIButton *kioskChangeModeButton;
+
+- (IBAction)kioskChangeModeTapped:(id)sender;
 
 @end

@@ -37,15 +37,19 @@
 
 #import "MainViewController.h"
 
+#import "PCStoreController.h"
+
 @implementation AppDelegate
 
 @synthesize window = _window;
 @synthesize viewController = _viewController;
+@synthesize storeController = _storeController;
 
 - (void)dealloc
 {
     [_window release];
     [_viewController release];
+	[_storeController release];
     [super dealloc];
 }
 
@@ -54,8 +58,13 @@
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
     self.viewController = [[[MainViewController alloc] initWithNibName:@"MainViewController" bundle:nil] autorelease];
-    self.window.rootViewController = self.viewController;
-    [self.window makeKeyAndVisible];
+	self.storeController = [[[PCStoreController alloc] initWithStoreRootViewController:self.viewController] autorelease];
+	//self.viewController.storeController = _storeController;
+	//[_storeController launch];
+
+	self.window.rootViewController = self.viewController;
+	[self.window makeKeyAndVisible];
+	
     return YES;
 }
 

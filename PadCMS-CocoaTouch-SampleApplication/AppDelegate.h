@@ -36,11 +36,16 @@
 #import <UIKit/UIKit.h>
 
 @class MainViewController;
+@class PCStoreController;
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
 @property (strong, nonatomic) MainViewController *viewController;
+
+@property (strong, nonatomic) PCStoreController *storeController;
+
+
 
 @end
