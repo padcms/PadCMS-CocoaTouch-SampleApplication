@@ -62,7 +62,9 @@
 	//self.viewController.storeController = _storeController;
 	//[_storeController launch];
 
-	self.window.rootViewController = self.viewController;
+	UINavigationController* navControler = [[UINavigationController alloc] initWithRootViewController:self.viewController];
+	navControler.navigationBar.hidden = YES;
+	self.window.rootViewController = navControler;//self.viewController.storeController.navigationController;
 	[self.window makeKeyAndVisible];
 	
     return YES;
