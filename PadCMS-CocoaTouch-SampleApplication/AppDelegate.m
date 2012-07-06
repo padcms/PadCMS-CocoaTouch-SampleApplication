@@ -64,7 +64,7 @@
 
 	UINavigationController* navControler = [[UINavigationController alloc] initWithRootViewController:self.viewController];
 	navControler.navigationBar.hidden = YES;
-	self.window.rootViewController = navControler;//self.viewController.storeController.navigationController;
+	self.window.rootViewController = [navControler autorelease];//self.viewController.storeController.navigationController;
 	[self.window makeKeyAndVisible];
 	
     return YES;
