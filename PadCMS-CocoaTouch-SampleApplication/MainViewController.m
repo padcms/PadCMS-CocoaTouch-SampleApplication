@@ -42,6 +42,13 @@
 
 @interface MainViewController ()
 @property (retain, nonatomic) PCKioskViewController *kioskViewController;
+
+
+- (void)rotateToPortraitOrientation;
+- (void)rotateToLandscapeOrientation;
+- (void)checkInterfaceOrientationForRevision:(PCRevision*)revision;
+
+
 @end
 
 @implementation MainViewController
@@ -68,6 +75,10 @@
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
+    if (self.revisionViewController != nil && self.revisionViewController.revision != nil) {
+        return [self.revisionViewController.revision interfaceOrientationAvailable:interfaceOrientation];
+    }
+    
 	return YES;
 }
 
@@ -116,6 +127,7 @@
 
 - (void) downloadFinishedWithRevisionIndex:(NSInteger)index
 {
+
   [self.kioskViewController downloadStartedWithRevisionIndex:index];
 }
 
@@ -141,7 +153,71 @@
 
 - (void) reloadSubviews;
 {
+
   [self.kioskViewController reloadSubviews];
+}
+
+
+#pragma mark - misc
+
+- (void)rotateToPortraitOrientation
+{
+    NSTimeInterval duration = [UIApplication sharedApplication].statusBarOrientationAnimationDuration;
+    [UIView animateWithDuration:duration delay:0 options:UIViewAnimationCurveEaseInOut animations:^{
+        
+        self.view.frame = CGRectMake(0, 0, 1024, 768);
+        self.view.center = CGPointMake(512, 384);
+        
+        CGAffineTransform portraitTransform = CGAffineTransformMakeRotation(M_PI * 2);
+        portraitTransform = CGAffineTransformTranslate(portraitTransform, -128.0, 128.0);
+        self.view.transform = portraitTransform;
+        
+        [[UIApplication sharedApplication] setStatusBarOrientation:UIInterfaceOrientationPortrait];
+        
+    } completion:^(BOOL finished) {
+        
+        [self.kioskViewController deviceOrientationDidChange];
+        
+    }];
+}
+
+- (void)rotateToLandscapeOrientation
+{
+    NSTimeInterval duration = [UIApplication sharedApplication].statusBarOrientationAnimationDuration;
+    [UIView animateWithDuration:duration delay:0 options:UIViewAnimationCurveEaseInOut animations:^{
+        
+        self.view.frame = CGRectMake(0, 0, 1024, 768);
+        self.view.center = CGPointMake(512, 384);
+        
+        CGAffineTransform landscapeTransform = CGAffineTransformMakeRotation( 90.0 * M_PI / -180.0 );
+        landscapeTransform = CGAffineTransformTranslate( landscapeTransform, -128.0, -128.0 );
+        self.view.transform = landscapeTransform;
+        
+        [[UIApplication sharedApplication] setStatusBarOrientation:UIInterfaceOrientationLandscapeLeft];
+        
+    } completion:^(BOOL finished) {
+        
+        [self.kioskViewController deviceOrientationDidChange];
+        
+    }];
+}
+
+- (void)checkInterfaceOrientationForRevision:(PCRevision*)revision
+{
+    if (revision != nil) {
+        UIInterfaceOrientation currentInterfaceOrientation = [UIApplication sharedApplication].statusBarOrientation;
+        
+        BOOL currentInterfaceAvailable = [revision interfaceOrientationAvailable:currentInterfaceOrientation];
+    
+        if (!currentInterfaceAvailable) {
+            if (UIDeviceOrientationIsLandscape(currentInterfaceOrientation)) {
+                [self rotateToPortraitOrientation];
+            } else {
+                [self rotateToLandscapeOrientation];
+            }
+        }
+    }
+
 }
 
 - (void)dealloc {
