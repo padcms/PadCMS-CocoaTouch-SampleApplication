@@ -27,13 +27,13 @@
 	<key>PADCMSConfig</key>
 	<dict>
 		<key>PCConfigApplicationIdentifier</key>
-		<integer>8</integer>
+		<integer>3</integer>
 		<key>PCConfigFacebookId</key>
 		<string>131210100350466</string>
 		<key>PCConfigGANAccountId</key>
 		<string></string>
 		<key>PCConfigServerURL</key>
-		<string>http://new.padcms.adyax.com</string>
+		<string>http://pp.padcms.adyax.com</string>
 		<key>PCConfigUseSandBox</key>
 		<false/>
 		<key>PCDisableSearching</key>

@@ -72,7 +72,7 @@
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
 }
-
+/*
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     if (self.revisionViewController != nil && self.revisionViewController.revision != nil) {
@@ -80,7 +80,7 @@
     }
     
 	return YES;
-}
+}*/
 
 
 - (void) displayIssues
@@ -159,7 +159,7 @@
 
 
 #pragma mark - misc
-
+/*
 - (void)rotateToPortraitOrientation
 {
     NSTimeInterval duration = [UIApplication sharedApplication].statusBarOrientationAnimationDuration;
@@ -219,7 +219,7 @@
     }
 
 }
-
+*/
 - (void)dealloc {
     [_kioskChangeModeButton release];
     [super dealloc];

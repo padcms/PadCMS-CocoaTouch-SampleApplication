@@ -56,6 +56,10 @@
 		60A5DD11158F487A00E3E98A /* sharePopup.png in Resources */ = {isa = PBXBuildFile; fileRef = 60A5DD0D158F487A00E3E98A /* sharePopup.png */; };
 		60A5DD2C158F4F1D00E3E98A /* icon_gallery.png in Resources */ = {isa = PBXBuildFile; fileRef = 60A5DD2A158F4F1D00E3E98A /* icon_gallery.png */; };
 		60A5DD2D158F4F1D00E3E98A /* icon_shelf.png in Resources */ = {isa = PBXBuildFile; fileRef = 60A5DD2B158F4F1D00E3E98A /* icon_shelf.png */; };
+		ABC7E20E15AA210700B06A38 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABC7E20D15AA210600B06A38 /* Accelerate.framework */; };
+		ABC7E21015AA210B00B06A38 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABC7E20F15AA210B00B06A38 /* CoreImage.framework */; };
+		ABC7E21215AA212300B06A38 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABC7E21115AA212300B06A38 /* AssetsLibrary.framework */; };
+		ABC7E21415AA216000B06A38 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABC7E21315AA216000B06A38 /* MobileCoreServices.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -148,6 +152,10 @@
 		60A5DD0D158F487A00E3E98A /* sharePopup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sharePopup.png; sourceTree = "<group>"; };
 		60A5DD2A158F4F1D00E3E98A /* icon_gallery.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_gallery.png; sourceTree = "<group>"; };
 		60A5DD2B158F4F1D00E3E98A /* icon_shelf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_shelf.png; sourceTree = "<group>"; };
+		ABC7E20D15AA210600B06A38 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		ABC7E20F15AA210B00B06A38 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		ABC7E21115AA212300B06A38 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		ABC7E21315AA216000B06A38 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +163,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABC7E21415AA216000B06A38 /* MobileCoreServices.framework in Frameworks */,
+				ABC7E21215AA212300B06A38 /* AssetsLibrary.framework in Frameworks */,
+				607F46AE158A0FA90097D960 /* ImageIO.framework in Frameworks */,
+				ABC7E21015AA210B00B06A38 /* CoreImage.framework in Frameworks */,
+				ABC7E20E15AA210700B06A38 /* Accelerate.framework in Frameworks */,
 				607F46C6158A3D2B0097D960 /* Twitter.framework in Frameworks */,
 				607F46C4158A3CD60097D960 /* MessageUI.framework in Frameworks */,
 				607F46C2158A1C740097D960 /* OpenAL.framework in Frameworks */,
@@ -167,7 +180,6 @@
 				607F46B4158A10420097D960 /* CFNetwork.framework in Frameworks */,
 				607F46B2158A101C0097D960 /* libz.dylib in Frameworks */,
 				607F46B0158A10010097D960 /* StoreKit.framework in Frameworks */,
-				607F46AE158A0FA90097D960 /* ImageIO.framework in Frameworks */,
 				607F46AC158A0ECD0097D960 /* libsqlite3.dylib in Frameworks */,
 				607F46A8158A05330097D960 /* SystemConfiguration.framework in Frameworks */,
 				607F46A01589FF250097D960 /* QuartzCore.framework in Frameworks */,
@@ -217,6 +229,10 @@
 		607F3DDC1588BD460097D960 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				ABC7E21315AA216000B06A38 /* MobileCoreServices.framework */,
+				ABC7E21115AA212300B06A38 /* AssetsLibrary.framework */,
+				ABC7E20F15AA210B00B06A38 /* CoreImage.framework */,
+				ABC7E20D15AA210600B06A38 /* Accelerate.framework */,
 				607F46C5158A3D2B0097D960 /* Twitter.framework */,
 				607F46C3158A3CD60097D960 /* MessageUI.framework */,
 				607F46C1158A1C740097D960 /* OpenAL.framework */,
