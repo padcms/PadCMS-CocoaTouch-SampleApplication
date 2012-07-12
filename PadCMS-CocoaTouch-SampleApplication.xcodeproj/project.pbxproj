@@ -56,6 +56,7 @@
 		60A5DD11158F487A00E3E98A /* sharePopup.png in Resources */ = {isa = PBXBuildFile; fileRef = 60A5DD0D158F487A00E3E98A /* sharePopup.png */; };
 		60A5DD2C158F4F1D00E3E98A /* icon_gallery.png in Resources */ = {isa = PBXBuildFile; fileRef = 60A5DD2A158F4F1D00E3E98A /* icon_gallery.png */; };
 		60A5DD2D158F4F1D00E3E98A /* icon_shelf.png in Resources */ = {isa = PBXBuildFile; fileRef = 60A5DD2B158F4F1D00E3E98A /* icon_shelf.png */; };
+		C50E49AA15AEED1800222413 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C50E49AC15AEED1800222413 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +87,13 @@
 			proxyType = 2;
 			remoteGlobalIDString = 60A5DCC8158B793F00E3E98A;
 			remoteInfo = "PadCMS-CocoaTouch-Core-Resources";
+		};
+		C50E49A815AEECDE00222413 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 607F3E031588C1140097D960 /* PadCMS-CocoaTouch-Core.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C50E498415AEA20E00222413;
+			remoteInfo = "PadCMS-CocoaTouch-Core-Tests";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -148,6 +156,9 @@
 		60A5DD0D158F487A00E3E98A /* sharePopup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sharePopup.png; sourceTree = "<group>"; };
 		60A5DD2A158F4F1D00E3E98A /* icon_gallery.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_gallery.png; sourceTree = "<group>"; };
 		60A5DD2B158F4F1D00E3E98A /* icon_shelf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_shelf.png; sourceTree = "<group>"; };
+		C50E49AB15AEED1800222413 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C50E49AF15AEEEAF00222413 /* fr-FR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "fr-FR"; path = "fr-FR.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		C50E49B015AEEEB100222413 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -262,6 +273,7 @@
 				607F3DE61588BD470097D960 /* InfoPlist.strings */,
 				607F3DE91588BD470097D960 /* main.m */,
 				607F3DEB1588BD470097D960 /* PadCMS-CocoaTouch-SampleApplication-Prefix.pch */,
+				C50E49AC15AEED1800222413 /* Localizable.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -271,6 +283,7 @@
 			children = (
 				607F3E0B1588C1140097D960 /* libPadCMS-CocoaTouch-Core.a */,
 				60A5DCE3158B79FD00E3E98A /* PadCMS-CocoaTouch-Core-Resources.bundle */,
+				C50E49A915AEECDE00222413 /* PadCMS-CocoaTouch-Core-Tests.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -371,6 +384,8 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				"fr-FR",
+				ru,
 			);
 			mainGroup = 607F3DCE1588BD460097D960;
 			productRefGroup = 607F3DDA1588BD460097D960 /* Products */;
@@ -403,6 +418,13 @@
 			remoteRef = 60A5DCE2158B79FD00E3E98A /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		C50E49A915AEECDE00222413 /* PadCMS-CocoaTouch-Core-Tests.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "PadCMS-CocoaTouch-Core-Tests.app";
+			remoteRef = C50E49A815AEECDE00222413 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -431,6 +453,7 @@
 				6033A6E71590694B00158E1C /* scrollControllBackground.png in Resources */,
 				6033A6E81590694B00158E1C /* sliderPageControlItemNormal.png in Resources */,
 				6033A6E91590694B00158E1C /* tocMenuButtonBackground.png in Resources */,
+				C50E49AA15AEED1800222413 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,6 +497,16 @@
 				607F3DE71588BD470097D960 /* en */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C50E49AC15AEED1800222413 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C50E49AB15AEED1800222413 /* en */,
+				C50E49AF15AEEEAF00222413 /* fr-FR */,
+				C50E49B015AEEEB100222413 /* ru */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

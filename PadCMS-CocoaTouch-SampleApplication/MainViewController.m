@@ -367,13 +367,15 @@
 {
     PCRevision *revision = [self revisionWithIndex:index];
     
-    NSString    *message = [NSString stringWithFormat:@"Etes-vous certain de vouloir supprimer ce numéro ? (%@)", revision.issue.title];
+    NSString    *message = [NSString stringWithFormat:@"%@ (%@)", 
+                            NSLocalizedString(@"Are you sure want to delete this number?", nil),
+                            revision.issue.title];
     
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil
                                                     message:message
                                                    delegate:self
-                                          cancelButtonTitle:@"Annuler"
-                                          otherButtonTitles:@"Oui", nil];
+                                          cancelButtonTitle:NSLocalizedString(@"No", nil)
+                                          otherButtonTitles:NSLocalizedString(@"Yes", nil), nil];
 	alert.delegate = self;
     alert.tag = index;
 	[alert show];
@@ -391,7 +393,11 @@
         //	NetworkStatus remoteHostStatus = [[VersionManager sharedManager].reachability currentReachabilityStatus];
 		if(remoteHostStatus == AFNetworkReachabilityStatusNotReachable) 
 		{
-			UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"Vous devez être connecté à Internet." message:nil delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+			UIAlertView* alert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"You should be connected to the Internet.", nil) 
+                                                            message:nil
+                                                           delegate:nil
+                                                  cancelButtonTitle:NSLocalizedString(@"OK", nil)
+                                                  otherButtonTitles:nil];
 			[alert show];
 			[alert release];
 			return;
@@ -477,7 +483,7 @@
                                 initWithTitle:NSLocalizedString(@"Error downloading issue!", nil) 
                                 message:NSLocalizedString(@"Try again later", nil) 
                                 delegate:nil
-                                cancelButtonTitle:@"OK" 
+                                cancelButtonTitle:NSLocalizedString(@"OK", nil) 
                                 otherButtonTitles:nil];
     
     [errorAllert show];
