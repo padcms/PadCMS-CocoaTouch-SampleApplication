@@ -46,7 +46,6 @@
 #import "PCJSONKeys.h"
 #import "PCRevisionViewController.h"
 #import "PCDownloadManager.h"
-#import "PCResourceCache.h"
 #import "KioskGalleryView.h"
 #import "KioskShelfView.h"
 
@@ -253,7 +252,6 @@
 - (void) switchToKiosk
 {
     [[NSURLCache sharedURLCache] removeAllCachedResponses];
-    [[PCResourceCache sharedInstance] removeAllObjects];
     [[PCDownloadManager sharedManager] cancelAllOperations];
     if(_revisionViewController)
     {
@@ -521,7 +519,6 @@
             
             if (revision)
             {
-                [[PCResourceCache sharedInstance] removeAllObjects];
                 [revision deleteContent];
                 [self.kioskViewController updateRevisionWithIndex:index];
             }
