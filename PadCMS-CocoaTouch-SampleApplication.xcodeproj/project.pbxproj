@@ -558,7 +558,7 @@
 		607F3DF91588BD470097D960 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Roman Iakovlev";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Roman Iakovlev (8L5SKGJVZ8)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PadCMS-CocoaTouch-SampleApplication/PadCMS-CocoaTouch-SampleApplication-Prefix.pch";
 				INFOPLIST_FILE = "PadCMS-CocoaTouch-SampleApplication/PadCMS-CocoaTouch-SampleApplication-Info.plist";
@@ -567,7 +567,7 @@
 					"-lstdc++",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "19F4B361-739A-4C54-B1D9-79E76AC86C33";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "6B197C28-F423-402F-B67A-17C19599FA40";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
