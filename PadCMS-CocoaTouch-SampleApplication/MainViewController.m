@@ -422,6 +422,11 @@
 {
 }
 
+- (void) tapInKiosk
+{
+    // nothing
+}
+
 #pragma mark - Download flow
 
 - (void)doDownloadRevisionWithIndex:(NSNumber *)index
