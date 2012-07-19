@@ -26,6 +26,19 @@
 	<true/>
 	<key>PADCMSConfig</key>
 	<dict>
+		<key>PCTableOfContents</key>
+		<dict>
+			<key>PCTableOfContentsTop</key>
+			<dict>
+				<key>Enabled</key>
+				<false/>
+			</dict>
+			<key>PCTableOfContentsBottom</key>
+			<dict>
+				<key>Enabled</key>
+				<true/>
+			</dict>
+		</dict>
 		<key>PCConfigApplicationIdentifier</key>
 		<integer>22</integer>
 		<key>PCConfigFacebookId</key>
