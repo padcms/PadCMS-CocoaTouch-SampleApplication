@@ -91,6 +91,13 @@
 			remoteGlobalIDString = 60A5DCC8158B793F00E3E98A;
 			remoteInfo = "PadCMS-CocoaTouch-Core-Resources";
 		};
+		AB61EE1515B822B40031496A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 607F3E031588C1140097D960 /* PadCMS-CocoaTouch-Core.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C50E498415AEA20E00222413;
+			remoteInfo = "PadCMS-CocoaTouch-Core-Tests";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -287,6 +294,7 @@
 			children = (
 				607F3E0B1588C1140097D960 /* libPadCMS-CocoaTouch-Core.a */,
 				60A5DCE3158B79FD00E3E98A /* PadCMS-CocoaTouch-Core-Resources.bundle */,
+				AB61EE1615B822B40031496A /* PadCMS-CocoaTouch-Core-Tests.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -417,6 +425,13 @@
 			fileType = wrapper.cfbundle;
 			path = "PadCMS-CocoaTouch-Core-Resources.bundle";
 			remoteRef = 60A5DCE2158B79FD00E3E98A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AB61EE1615B822B40031496A /* PadCMS-CocoaTouch-Core-Tests.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "PadCMS-CocoaTouch-Core-Tests.app";
+			remoteRef = AB61EE1515B822B40031496A /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
