@@ -157,8 +157,6 @@
 		60A5DD2A158F4F1D00E3E98A /* icon_gallery.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_gallery.png; sourceTree = "<group>"; };
 		60A5DD2B158F4F1D00E3E98A /* icon_shelf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_shelf.png; sourceTree = "<group>"; };
 		C50E49AB15AEED1800222413 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		C50E49AF15AEEEAF00222413 /* fr-FR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "fr-FR"; path = "fr-FR.lproj/Localizable.strings"; sourceTree = "<group>"; };
-		C50E49B015AEEEB100222413 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -503,8 +501,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				C50E49AB15AEED1800222413 /* en */,
-				C50E49AF15AEEEAF00222413 /* fr-FR */,
-				C50E49B015AEEEB100222413 /* ru */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";

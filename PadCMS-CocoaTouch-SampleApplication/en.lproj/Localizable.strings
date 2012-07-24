@@ -32,19 +32,3 @@
 //  The fact that you are presently reading this means that you have had
 //  knowledge of the CeCILL-C license and that you accept its terms.
 //
-
-"Are you sure want to delete this number?" = "Are you sure want to delete this number?";
-
-"You should be connected to the Internet." = "You should be connected to the Internet.";
-
-"Error downloading issue!" = "Error downloading issue!";
-
-"Try again later" = "Try again later";
-
-"Yes" = "Yes";
-
-"No" = "No";
-
-"OK" = "OK";
-
-"Cancel" = "Cancel";

@@ -48,6 +48,7 @@
 #import "PCDownloadManager.h"
 #import "KioskGalleryView.h"
 #import "KioskShelfView.h"
+#import "PCLocalizationManager.h"
 
 @interface MainViewController ()
 {
@@ -78,6 +79,7 @@
 
 @implementation MainViewController
 @synthesize kioskChangeModeButton = _kioskChangeModeButton;
+@synthesize kioskTitleLabel = _kioskTitleLabel;
 
 @synthesize kioskViewController = _kioskViewController;
 @synthesize padcmsCoder = _padcmsCoder;
@@ -112,6 +114,7 @@
 - (void)viewDidUnload
 {
     [self setKioskChangeModeButton:nil];
+    [self setKioskTitleLabel:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -130,13 +133,24 @@
 {
     [UIApplication sharedApplication].applicationIconBadgeNumber = -1;
     
+    NSString        *magazinesNotAvailableTitle = [PCLocalizationManager localizedStringForKey:@"ALERT_TITLE_CANT_LOAD_MAGAZINES_LIST"
+                                                                                         value:@"The list of available magazines could not be downloaded"];
+    
     if (currentApplication == nil)
     {
         AFNetworkReachabilityStatus remoteHostStatus = [PCDownloadApiClient sharedClient].networkReachabilityStatus;
         //      NetworkStatus remoteHostStatus = [[VersionManager sharedManager].reachability currentReachabilityStatus];
         if(remoteHostStatus == AFNetworkReachabilityStatusNotReachable)
         {
-            UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"You must be connected to the Internet." message:nil delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+            NSString        *title = [PCLocalizationManager localizedStringForKey:@"MSG_NO_NETWORK_CONNECTION"
+                                                                            value:@"You must be connected to the Internet."];
+            
+            UIAlertView* alert = [[UIAlertView alloc] initWithTitle:title
+                                                            message:nil
+                                                           delegate:nil
+                                                  cancelButtonTitle:[PCLocalizationManager localizedStringForKey:@"BUTTON_TITLE_OK"
+                                                                                                           value:@"OK"]
+                                                  otherButtonTitles:nil];
                                   [alert show];
                                   [alert release];
         } else {
@@ -146,7 +160,12 @@
 
             if (![self.padcmsCoder syncServerPlistDownload])
             {
-                UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"The list of available magazines could not be downloaded" message:nil delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+                UIAlertView* alert = [[UIAlertView alloc] initWithTitle:magazinesNotAvailableTitle
+                                                                message:nil
+                                                               delegate:nil
+                                                      cancelButtonTitle:[PCLocalizationManager localizedStringForKey:@"BUTTON_TITLE_OK"
+                                                                                                               value:@"OK"]
+                                                      otherButtonTitles:nil];
                 [alert show];
                 [alert release];
             }
@@ -156,13 +175,23 @@
         NSDictionary *plistContent = [NSDictionary dictionaryWithContentsOfFile:plistPath];
         if(plistContent == nil)
         {
-            UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"The list of available magazines could not be downloaded" message:nil delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+            UIAlertView* alert = [[UIAlertView alloc] initWithTitle:magazinesNotAvailableTitle
+                                                            message:nil
+                                                           delegate:nil
+                                                  cancelButtonTitle:[PCLocalizationManager localizedStringForKey:@"BUTTON_TITLE_OK"
+                                                                                                           value:@"OK"]
+                                                  otherButtonTitles:nil];
             [alert show];
             [alert release];
         } else
             if([plistContent count]==0)
             {
-                UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"The list of available magazines could not be downloaded" message:nil delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+                UIAlertView* alert = [[UIAlertView alloc] initWithTitle:magazinesNotAvailableTitle
+                                                                message:nil
+                                                               delegate:nil
+                                                      cancelButtonTitle:[PCLocalizationManager localizedStringForKey:@"BUTTON_TITLE_OK"
+                                                                                                               value:@"OK"]
+                                                      otherButtonTitles:nil];
                 [alert show];
                 [alert release];
             } else {
@@ -175,7 +204,12 @@
                     currentApplication = [[PCApplication alloc] initWithParameters:applicationParameters
                                                                      rootDirectory:[PCPathHelper pathForPrivateDocuments]];
                 } else {
-                    UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"The list of available magazines could not be downloaded" message:nil delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+                    UIAlertView* alert = [[UIAlertView alloc] initWithTitle:magazinesNotAvailableTitle
+                                                                    message:nil
+                                                                   delegate:nil
+                                                          cancelButtonTitle:[PCLocalizationManager localizedStringForKey:@"BUTTON_TITLE_OK"
+                                                                                                                   value:@"OK"]
+                                                          otherButtonTitles:nil];
                    [alert show];
                    [alert release];
                 }
@@ -193,6 +227,9 @@
     self.kioskViewController.view.backgroundColor = [UIColor clearColor];
     
     [self.kioskView addSubview:self.kioskViewController.view];
+    
+    self.kioskTitleLabel.text = [PCLocalizationManager localizedStringForKey:@"KIOSK_NAVIGATION_BAR_TITLE"
+                                                                       value:@"Kiosk"];
 }
 
 - (IBAction)kioskChangeModeTapped:(id)sender
@@ -368,14 +405,17 @@
     PCRevision *revision = [self revisionWithIndex:index];
     
     NSString    *message = [NSString stringWithFormat:@"%@ (%@)", 
-                            NSLocalizedString(@"Are you sure want to delete this number?", nil),
+                            [PCLocalizationManager localizedStringForKey:@"ALERT_MAGAZINE_REMOVAL_CONFIRMATION_MESSAGE"
+                                                                   value:@"Are you sure you want to remove this issue?"],
                             revision.issue.title];
     
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil
                                                     message:message
                                                    delegate:self
-                                          cancelButtonTitle:NSLocalizedString(@"No", nil)
-                                          otherButtonTitles:NSLocalizedString(@"Yes", nil), nil];
+                                          cancelButtonTitle:[PCLocalizationManager localizedStringForKey:@"ALERT_MAGAZINE_REMOVAL_CONFIRMATION_BUTTON_TITLE_CANCEL"
+                                                                                                   value:@"Cancel"]
+                                          otherButtonTitles:[PCLocalizationManager localizedStringForKey:@"ALERT_MAGAZINE_REMOVAL_CONFIRMATION_BUTTON_TITLE_YES"
+                                                                                                   value:@"Yes"], nil];
 	alert.delegate = self;
     alert.tag = index;
 	[alert show];
@@ -393,10 +433,12 @@
         //	NetworkStatus remoteHostStatus = [[VersionManager sharedManager].reachability currentReachabilityStatus];
 		if(remoteHostStatus == AFNetworkReachabilityStatusNotReachable) 
 		{
-			UIAlertView* alert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"You should be connected to the Internet.", nil) 
+			UIAlertView* alert = [[UIAlertView alloc] initWithTitle:[PCLocalizationManager localizedStringForKey:@"MSG_NO_NETWORK_CONNECTION"
+                                                                                                           value:@"You must be connected to the Internet."]
                                                             message:nil
                                                            delegate:nil
-                                                  cancelButtonTitle:NSLocalizedString(@"OK", nil)
+                                                  cancelButtonTitle:[PCLocalizationManager localizedStringForKey:@"BUTTON_TITLE_OK"
+                                                                                                           value:@"OK"]
                                                   otherButtonTitles:nil];
 			[alert show];
 			[alert release];
@@ -485,10 +527,13 @@
     [self.kioskViewController downloadFailedWithRevisionIndex:[index integerValue]];
     
     UIAlertView *errorAllert = [[UIAlertView alloc] 
-                                initWithTitle:NSLocalizedString(@"Error downloading issue!", nil) 
-                                message:NSLocalizedString(@"Try again later", nil) 
+                                initWithTitle:[PCLocalizationManager localizedStringForKey:@"ALERT_MAGAZINE_DOWNLOADING_FAILED_TITLE"
+                                                                                     value:@"Error downloading issue!"]
+                                message:[PCLocalizationManager localizedStringForKey:@"ALERT_MAGAZINE_DOWNLOADING_FAILED_MESSAGE"
+                                                                               value:@"Try again later"]
                                 delegate:nil
-                                cancelButtonTitle:NSLocalizedString(@"OK", nil) 
+                                cancelButtonTitle:[PCLocalizationManager localizedStringForKey:@"BUTTON_TITLE_OK"
+                                                                                         value:@"OK"]
                                 otherButtonTitles:nil];
     
     [errorAllert show];
@@ -600,6 +645,7 @@
 
 - (void)dealloc {
     [_kioskChangeModeButton release];
+    [_kioskTitleLabel release];
     [super dealloc];
 }
 @end

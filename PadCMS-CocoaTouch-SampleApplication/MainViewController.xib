@@ -171,6 +171,14 @@
 					<int key="connectionID">10</int>
 				</object>
 				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">kioskTitleLabel</string>
+						<reference key="source" ref="841351856"/>
+						<reference key="destination" ref="173107983"/>
+					</object>
+					<int key="connectionID">11</int>
+				</object>
+				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
 						<string key="label">kioskChangeModeTapped:</string>
 						<reference key="source" ref="486781412"/>
@@ -250,7 +258,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">10</int>
+			<int key="maxID">11</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -270,12 +278,17 @@
 					</object>
 					<dictionary class="NSMutableDictionary" key="outlets">
 						<string key="kioskChangeModeButton">UIButton</string>
+						<string key="kioskTitleLabel">UILabel</string>
 						<string key="kioskView">UIView</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
 						<object class="IBToOneOutletInfo" key="kioskChangeModeButton">
 							<string key="name">kioskChangeModeButton</string>
 							<string key="candidateClassName">UIButton</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="kioskTitleLabel">
+							<string key="name">kioskTitleLabel</string>
+							<string key="candidateClassName">UILabel</string>
 						</object>
 						<object class="IBToOneOutletInfo" key="kioskView">
 							<string key="name">kioskView</string>

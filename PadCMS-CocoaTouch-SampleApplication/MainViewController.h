@@ -48,5 +48,6 @@ PCKioskViewControllerDelegateProtocol>
 @property (retain, nonatomic) IBOutlet UIView *kioskView;
 - (IBAction)kioskChangeModeTapped:(id)sender;
 @property (retain, nonatomic) IBOutlet UIButton *kioskChangeModeButton;
+@property (retain, nonatomic) IBOutlet UILabel *kioskTitleLabel;
 
 @end
