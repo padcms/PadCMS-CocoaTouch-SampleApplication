@@ -123,7 +123,7 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     if (self.revisionViewController != nil && self.revisionViewController.revision != nil) {
-        return [self.revisionViewController.revision interfaceOrientationAvailable:interfaceOrientation];
+        return [self.revisionViewController.revision supportsInterfaceOrientation:interfaceOrientation];
     }
     
 	return YES;
@@ -631,7 +631,7 @@
     if (revision != nil) {
         UIInterfaceOrientation currentInterfaceOrientation = [UIApplication sharedApplication].statusBarOrientation;
         
-        BOOL currentInterfaceAvailable = [revision interfaceOrientationAvailable:currentInterfaceOrientation];
+        BOOL currentInterfaceAvailable = [revision supportsInterfaceOrientation:currentInterfaceOrientation];
     
         if (!currentInterfaceAvailable) {
             if (UIDeviceOrientationIsLandscape(currentInterfaceOrientation)) {
